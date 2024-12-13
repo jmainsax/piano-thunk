@@ -38,3 +38,9 @@
 <p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
+window.addEventListener('message', (event) => {
+  if (event.data.type === 'playTrichord') {
+    playTrichord(event.data.notes);
+  }
+});
+
